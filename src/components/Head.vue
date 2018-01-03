@@ -28,9 +28,6 @@ export default {
 }
 </script>
 
-<script src=".././assets/Js/jquery.min.js">
-
-</script>
 
 <style scoped>
 .hero-cont{
