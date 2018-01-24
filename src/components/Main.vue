@@ -1,11 +1,9 @@
 <template>
-  <div class="Main">
-
-    <my-header></my-header>  
-    <my-timeline></my-timeline>
-    <!-- <my-projects></my-projects>  -->
-    <my-expertise></my-expertise>
-
+  <div id="fullpage" class="Main">
+    <my-header class="section"></my-header>  
+    <my-timeline class="section"></my-timeline>
+    <my-projects class="section"></my-projects> 
+    <!-- <my-expertise class="section"></my-expertise> -->
   </div>
 </template>
 
@@ -29,6 +27,7 @@ export default {
   }
 }
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

@@ -10,8 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "element-ui": "^2.0.10",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
+    "vue-scroll-reveal": "^1.0.5",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {

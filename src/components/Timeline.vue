@@ -1,53 +1,68 @@
 <template>
-    <div class="my-timeline">
-        <h2 class="section-heading">Timeline</h2>
-        <div class="line"></div>
-        <div class="bubble-one"></div>
-        <div class="box box-one">
-            <div class="box-title">
-                <h5>Born</h5>
-                <p>1995/08/25</p>
-                <div class="more-info-bubble" style="display:none">
-                    <p>Ainsebaa Casablanca Morocco</p>
-                </div>
-            </div>
+<div id="my-timeline">
+	<link rel="stylesheet" href="./static/horizontal-timeline/css/reset.css">
+	<link rel="stylesheet" href="./static/horizontal-timeline/css/style.css">
+	<section class="cd-horizontal-timeline">
+		<!-- <h2 class="section-heading">Timeline</h2> -->
+		<div class="timeline">
+			<div class="events-wrapper">
+				<div class="events">
+					<ol>
+						<li><a href="#0" data-date="16/01/2015" class="selected">1995</a></li>
+						<li><a href="#0" data-date="25/03/2015">2015</a></li>
+						<li><a href="#0" data-date="10/04/2015">2017</a></li>
+						<li><a href="#0" data-date="20/04/2015">2018</a></li>
+					</ol>
+					<span class="filling-line" aria-hidden="true" style="transform: scaleX(0.172386);"></span>
+				</div> <!-- .events -->
+			</div> <!-- .events-wrapper -->
+				
+			<ul class="cd-timeline-navigation">
+				<li><a href="#0" class="prev inactive">Prev</a></li>
+				<li><a href="#0" class="next">Next</a></li>
+			</ul> <!-- .cd-timeline-navigation -->
+		</div> <!-- .timeline -->
 
-        </div>
-        <div class="bubble-two"></div>
-        <div class="box box-two">
-            <div class="box-title">
-                <h5>Bac</h5>
-                <p>2015</p>
-                <div class="more-info-bubble" style="display:none">
-                    <p><b>Lycée</b> Baroudi</p>
-                </div>
-            </div>
-        </div>
-        <div class="bubble-three"></div>
-        <div class="box box-three">
-            <div class="box-title">
-                <h5>Dut</h5>
-                <p>2015/2017</p>
-                <div class="more-info-bubble" style="display:none">
-                    <p><b>ISGI:</b> Technicien Spécialisé en Développement Informatique</p>
-                </div>
-            </div>
-        </div>
-        <div class="bubble-four"></div>
-        <div class="box box-four">
-            <div class="box-title">
-                <h5>IT-Learing</h5>
-                <p>2017</p>
-                <div class="more-info-bubble" style="display:none">
-                    <p><b>Liam:</b> Licence d'Université Ingénierie des Applications Mobiles </p>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="bubble-five"></div>
-        <div class="box box-five"></div> -->
-        <!-- <div class="bubble-six"></div>
-        <div class="box box-six"></div> -->
-    </div>
+		<div class="events-content">
+			<ol>
+				<li class="selected" data-date="16/01/2015">
+					<h2 class="event-title">Born</h2>
+					<em>1995/08/25</em>
+					<p>	
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+
+					</p>
+				</li>
+
+				<li data-date="25/03/2015">
+					<h2 class="event-title">Bacalaureat</h2>
+					<em>February 28th, 2014</em>
+					<p>	
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+					</p>
+				</li>
+
+				<li data-date="10/04/2015">
+					<h2 class="event-title">TSDI</h2>
+					<em>Institut Specialise de Développement Informatique</em>
+					<p>	
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+					</p>
+				</li>
+
+				<li data-date="20/04/2015">
+					<h2 class="event-title">LIAM</h2>
+					<em>Licence d'Université Ingénierie des Applications Mobiles</em>
+					<p>	
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+					</p>
+				</li>
+			</ol>
+		</div> <!-- .events-content -->
+</section>
+  
+</div>
+
 </template>
 
 <script>
@@ -60,105 +75,28 @@ export default {
   },
 }
 </script>
-
 <style scoped>
-.my-timeline{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-image: url(".././assets/Hero/9-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-Y: -80%;
-    background-position-X: 500px;
-    display : table;
-    /* background: red; */
-}
-.line{
-    position: absolute;
-    height: 3px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2000;
-    width: 85%;
-    border-radius: 100%;
-    background-color: #fff;
-    z-index: 5;
-}
-.bubble-one,.bubble-two,.bubble-three,.bubble-four,.bubble-five,.bubble-six{
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    background-color: #fff;
-    top: 40%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-    z-index: 10;
-}
 
-.box{
-    position: absolute;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    cursor: pointer;
-    top: 49%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-    transition: 500ms all ease-in-out;
-    z-index: 20;
-}
-.box * {
-    color: #000;
-    font-family: 'Assistant', sans-serif;
-    letter-spacing: 0.1rem;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-}
-.box:hover{
-    width: 12rem;
-    height: 12rem;
-    border-radius: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 
-.box-title h5,.box-title p{
-    margin: 12px 0 0 0;
+ #my-timeline{
+	background-image: url(".././assets/Hero/2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position-Y: 50%;
 }
-.bubble-two{
-    left: 35%;
-}
-.box-two{
-    left: 35%;
-    top: 31%;
-}
-.bubble-three{
-    left: 60%;
-}
-.box-three{
-    left: 60%;
-}
-.bubble-four{
-    left: 92%;
-}
-.box-four{
-    top: 31%;
-    left: 92%;
-}
-/* .bubble-five{
-    left: 80%;
-}
-.box-five{
-    left: 80%;
-}
-.bubble-six{
-    left: 92%;
-}
-.box-six{
-    left: 92%;
+/* section{
+    height: 100%;
 } */
-
+p{
+	font-family: 'Quicksand', sans-serif;
+}
+h2,p,em{
+	text-align: start;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
 </style>
+
+
 
